@@ -1,0 +1,457 @@
+.header {
+  background-color: #B4B6BB;
+  height: 46px;
+  &__{
+    &l {
+      height: 100%;
+      width: 2px;
+      border: none;
+      background-image: linear-gradient(to right, #DCDCDC, #8A8A8A);
+    }
+
+    &block {
+      height: 46px;
+      display: flex;
+      align-items: center;
+
+    }
+    &button {
+      width: 320px;
+      color: #ffffff;
+      height: 100%;
+      background-color: #E95F0E;
+      padding-right: 28px;
+      padding-left: 20px;
+      @include DinMedium;
+      font-size: 17px;
+      text-transform: uppercase;
+      svg {
+        fill: #ffffff;
+        height: 26px;
+        width: 26px;
+
+      }
+      &:active {
+        color: #E95F0E;
+        background-color: #ffffff;
+        svg {
+          fill: #E95F0E;
+          height: 26px;
+          width: 26px;
+
+        }
+      }
+
+    }
+    &search {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 743px;
+      height: 23px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 12px;
+      padding-right: 7px;
+      i {
+        color: #666666;
+      }
+    }
+    &input {
+      @include DinLight;
+      font-size: 13px;
+      color: #666666;
+      text-transform: uppercase;
+      border: none;
+      width: 80%;
+      &::placeholder {
+        @include DinLight;
+        font-size: 13px;
+        color: #666666;
+      }
+
+
+    }
+    &language {
+      z-index: 6;
+      position: relative;
+      width: 93px;
+      text-align: center;
+      height: 100%;
+
+
+
+      &:hover {
+        background-color: #ffffff;
+        .header__select {
+          display: block;
+        }
+
+      }
+
+    }
+    &flag {
+      width: 93px;
+      height: 46px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        margin-left: 18px;
+      }
+
+    }
+    &arrow-down {
+      margin-right: 18px;
+      height: 0;
+      width: 0;
+      border-top: 7px solid #000000;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    &select {
+      position: absolute;
+      left: 0;
+      display: none;
+      z-index: 3;
+    }
+    &option {
+      width: 93px;
+      height: 41px;
+      background-color: #CACACA;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child) {
+        border-bottom: 1px solid #DDDDDD;
+      }
+      &:hover {
+        background-color: #EAEBED;
+
+      }
+
+    }
+    &social {
+      width: 56px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #666666;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        width: 19px;
+        height: 19px;
+        border: 2.0px solid #666666;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          border-color: #ffffff;
+          i {
+            color: #ffffff;
+          }
+        }
+        i {
+          font-size: 12px;
+          color: #666666;
+
+        }
+      }
+    }
+    &envelope {
+      height: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 207px;
+      background-color: inherit;
+      @include DinBold;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #666666;
+      &:hover {
+        color: #ffffff;
+        transition: 0.3s;
+        i {
+          color: #ffffff;
+          border-color: #ffffff;
+          transition: 0.3s;
+        }
+      }
+        i {
+          font-size: 12px;
+          color: #666666;
+          width: 19px;
+          height: 19px;
+          border: 2.0px solid #666666;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    }
+  }
+}
+
+@media (max-width: 1499px) {
+  .header {
+    &__{
+      &l {
+      }
+
+      &block {
+
+      }
+      &button {
+        width: 268px;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 14px;
+        justify-content: flex-start;
+        svg {
+          margin-right: 10px;
+
+        }
+        strong {
+          display: flex;
+        }
+        &:active {
+          svg {
+
+          }
+        }
+
+      }
+      &search {
+        width: 320px;
+        i {
+        }
+      }
+      &input {
+
+
+      }
+      &language {
+
+
+
+        &:hover {
+          .header__select {
+          }
+
+        }
+
+      }
+      &flag {
+        img {
+        }
+
+      }
+      &arrow-down {
+      }
+      &select {
+      }
+      &option {
+        &:hover {
+
+        }
+
+      }
+      &social {
+        a {
+          &:hover {
+            i {
+            }
+          }
+          i {
+
+          }
+        }
+
+
+      }
+      &envelope {
+        width: 60px;
+        align-items: center;
+        justify-content: center;
+        span {
+          display: none;
+        }
+        &:hover {
+          i {
+          }
+        }
+        i {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .header {
+    &__{
+      &l {
+      }
+
+      &block {
+
+      }
+      &button {
+        svg {
+
+        }
+        span {
+          span {
+
+            display: none;
+          }
+        }
+        &:active {
+          svg {
+
+          }
+        }
+
+      }
+      &search {
+        i {
+        }
+      }
+      &input {
+
+
+      }
+      &language {
+
+
+
+        &:hover {
+          .header__select {
+          }
+
+        }
+
+      }
+      &flag {
+        img {
+        }
+
+      }
+      &arrow-down {
+      }
+      &select {
+      }
+      &option {
+        &:hover {
+
+        }
+
+      }
+      &social {
+        a {
+          &:hover {
+            i {
+            }
+          }
+          i {
+
+          }
+        }
+
+
+      }
+      &envelope {
+        &:hover {
+          i {
+          }
+        }
+        i {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .header {
+    &__{
+      &l {
+      }
+
+      &block {
+
+      }
+      &button {
+        svg {
+
+        }
+        &:active {
+          svg {
+
+          }
+        }
+
+      }
+      &search {
+        i {
+        }
+      }
+      &input {
+
+
+      }
+      &language {
+
+
+
+        &:hover {
+          .header__select {
+          }
+
+        }
+
+      }
+      &flag {
+        img {
+        }
+
+      }
+      &arrow-down {
+      }
+      &select {
+      }
+      &option {
+        &:hover {
+
+        }
+
+      }
+      &social {
+        a {
+          &:hover {
+            i {
+            }
+          }
+          i {
+
+          }
+        }
+
+
+      }
+      &envelope {
+        &:hover {
+          i {
+          }
+        }
+        i {
+        }
+      }
+    }
+  }
+}

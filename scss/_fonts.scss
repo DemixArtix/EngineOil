@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'DIN Pro Light';
+  src: url('../fonts/DinPro/DINPro-Light.eot');
+  src: url('../fonts/DinPro/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DinPro/DINPro-Light.woff') format('woff'),
+  url('../fonts/DinPro/DINPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+
+@font-face {
+  font-family: 'DIN Pro Medium';
+  src: url('../fonts/DinPro/DINPro-Medium.eot');
+  src: url('../fonts/DinPro/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DinPro/DINPro-Medium.woff') format('woff'),
+  url('../fonts/DinPro/DINPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'DIN Pro Bold';
+  src: url('../fonts/DinPro/DINPro-Bold.eot');
+  src: url('../fonts/DinPro/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DinPro/DINPro-Bold.woff') format('woff'),
+  url('../fonts/DinPro/DINPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Light';
+  src: url('../fonts/MyriadPro/MyriadPro-Light.eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Light.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Arial Narrow Bold';
+  src: url('../fonts/Arial/ArialNarrow-Bold.eot');
+  src: url('../fonts/Arial/ArialNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Arial/ArialNarrow-Bold.woff') format('woff'),
+  url('../fonts/Arial/ArialNarrow-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@mixin DinLight {
+  font-family: "DIN Pro Light", sans-serif;
+  font-weight: 300;
+}
+
+@mixin DinMedium {
+  font-family: "DIN Pro Medium", sans-serif;
+  font-weight: 500;
+}
+
+@mixin DinBold {
+  font-family: "DIN Pro Bold", sans-serif;
+  font-weight: 700;
+}
+
+@mixin MyriadLight {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-weight: 300;
+}
+
+@mixin ArialBold {
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-weight: 700;
+}
+
