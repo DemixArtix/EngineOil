@@ -115,9 +115,9 @@ $(document).ready(function () {
   }
 
   checkWidth();
-
-  $(window).resize(function(){
-    checkWidth();
-  });
+  //
+  // $(window).resize(function(){
+  //   checkWidth();
+  // });
 });
 
