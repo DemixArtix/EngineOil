@@ -382,6 +382,11 @@ input:focus {
   .container {
     margin: auto;
     max-width: 90%; } }
+@media (max-width: 640px) {
+  .container {
+    margin: auto;
+    width: 97%;
+    min-width: 430px; } }
 .header {
   background-color: #B4B6BB;
   height: 46px; }
