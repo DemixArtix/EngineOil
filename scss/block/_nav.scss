@@ -170,6 +170,12 @@
 
 }
 
+.active {
+  .nav-sub__list {
+    display: block;
+  }
+}
+
 @media (max-width: 1499px) {
   .nav {
     .container {

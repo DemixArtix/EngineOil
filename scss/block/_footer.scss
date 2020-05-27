@@ -418,3 +418,125 @@
     }
   }
 }
+
+
+@media (max-width: 640px) {
+  .footer {
+
+    &__ {
+      &links {
+      }
+
+      &gazprom {
+        margin: auto;
+      }
+
+      &socials {
+
+
+      }
+
+      &link {
+
+        &:hover {
+          i {
+          }
+        }
+
+        i {
+        }
+
+
+      }
+
+      &sponsors {
+          flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+      }
+
+      &sponsor {
+        height: 100px;
+        margin: auto;
+
+        img {
+        }
+
+        span {
+        }
+
+        .chery {
+        }
+
+        .lifan {
+
+        }
+
+        .lifan-image {
+        }
+
+      }
+
+      &line {
+      }
+
+      &shares {
+
+      }
+
+      &share {
+
+        &:first-child {
+        }
+
+        &:last-child {
+        }
+
+        span {
+        }
+
+        a {
+          &:hover {
+          }
+
+          &:not(:last-child) {
+          }
+
+          i {
+          }
+
+        }
+      }
+
+      &contacts {
+
+      }
+
+      &trademark {
+
+        a {
+        }
+
+      }
+
+      &languages {
+
+      }
+
+      &language {
+        &:not(:last-child) {
+        }
+
+        &:hover {
+        }
+
+      }
+
+      &maker {
+        a {
+        }
+      }
+    }
+  }
+}

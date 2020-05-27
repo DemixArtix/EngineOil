@@ -377,7 +377,7 @@
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 640px) {
   .header {
     &__{
       &l {
@@ -398,14 +398,23 @@
 
       }
       &search {
+        background-color: #B4B6BB;
+        justify-content: center;
+        margin: auto;
+        min-width: 53px;
+        border-radius: 0;
         i {
+
         }
       }
       &input {
+        display: none;
 
 
       }
       &language {
+        width: 70px;
+        justify-content: center;
 
 
 
@@ -422,17 +431,27 @@
 
       }
       &arrow-down {
+        display: none;
       }
       &select {
       }
       &option {
+        width: 70px;
         &:hover {
 
         }
 
       }
       &social {
+        padding-left: auto;
+        padding-right: auto;
         a {
+          &:first-child {
+            margin-right: 5px;
+          }
+          &:last-child {
+            margin-left: 5px;
+          }
           &:hover {
             i {
             }
