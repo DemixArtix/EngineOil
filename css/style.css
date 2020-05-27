@@ -563,6 +563,10 @@ input:focus {
 @media (max-width: 999px) {
   .header__button span span {
     display: none; }
+  .header__search-open {
+    display: none; }
+  .header__search-close {
+    display: none; }
   .header__social a:first-child {
     margin-right: 5px; } }
 @media (max-width: 640px) {
@@ -571,16 +575,57 @@ input:focus {
   .header__search {
     background-color: #B4B6BB;
     justify-content: center;
-    margin: auto;
     min-width: 30px;
     border-radius: 0;
-    padding-left: auto;
-    padding-right: auto; }
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0; }
+    .header__search > i {
+      display: none; }
+    .header__search-open {
+      display: flex;
+      width: 100%;
+      height: 46px;
+      background-color: #B4B6BB;
+      justify-content: center; }
+      .header__search-open:active {
+        transition: 0.2s;
+        background-color: white; }
+      .header__search-open i {
+        color: #666666; }
+    .header__search-close {
+      display: none;
+      position: absolute;
+      font-size: 24px;
+      right: 0;
+      top: 0;
+      height: 46px;
+      width: 46px;
+      justify-content: center;
+      background-color: #E95F0E;
+      z-index: 8;
+      border-left: 3px solid #B4B6BB; }
+      .header__search-close:active {
+        background-color: #ffffff; }
   .header__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 3px;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    height: 38px;
+    z-index: 7;
+    border-color: #B4B6BB;
+    border-style: solid;
     display: none; }
   .header__language {
     width: 70px;
     justify-content: center; }
+  .header__flag {
+    width: 70px; }
   .header__arrow-down {
     display: none; }
   .header__option {
@@ -1012,7 +1057,11 @@ input:focus {
   .offer__vector-2 {
     width: 0; }
   .offer__vector-3 {
-    width: 0; } }
+    width: 0; }
+  .offer__text span {
+    display: block;
+    margin: auto;
+    text-align: center; } }
 .footer {
   background-color: #252525;
   padding-top: 44px;
