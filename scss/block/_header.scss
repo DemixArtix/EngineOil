@@ -354,6 +354,9 @@
       }
       &social {
         a {
+          &:first-child {
+            margin-right: 5px;
+          }
           &:hover {
             i {
             }
@@ -381,6 +384,7 @@
   .header {
     &__{
       &l {
+        display: none;
       }
 
       &block {
@@ -401,8 +405,10 @@
         background-color: #B4B6BB;
         justify-content: center;
         margin: auto;
-        min-width: 53px;
+        min-width: 30px;
         border-radius: 0;
+        padding-left: auto;
+        padding-right: auto;
         i {
 
         }
@@ -443,8 +449,8 @@
 
       }
       &social {
-        padding-left: auto;
-        padding-right: auto;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         a {
           &:first-child {
             margin-right: 5px;

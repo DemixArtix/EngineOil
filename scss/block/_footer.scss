@@ -437,13 +437,15 @@
       }
 
       &link {
-
+        width: 42px;
+        height: 42px;
         &:hover {
           i {
           }
         }
 
         i {
+          font-size: 22px;
         }
 
 
